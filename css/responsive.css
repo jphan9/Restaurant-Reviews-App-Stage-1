@@ -1,8 +1,26 @@
+@media screen and (min-width: 361px) and (max-width: 450px) {
+}
+
 @media screen and (max-width: 580px) {
   .filter-options {
     padding: 10px;
     flex-direction: column;
     height: 100px;
+  }
+
+  .inside #map-container {
+    height:200px;
+  }
+
+  #restaurant-img {
+    width: 300px;
+  }
+
+}
+
+@media screen and (min-width: 581px) {
+  #restaurant-img {
+    width: 55%;
   }
 }
 
