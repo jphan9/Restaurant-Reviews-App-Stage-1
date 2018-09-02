@@ -1,4 +1,7 @@
+// Set cache version number.
 var staticCacheName = 'restaurant-v1';
+
+// Opens the cache
 self.addEventListener('install', function(event) {
   console.log("Installed");
   event.waitUntil(
@@ -44,7 +47,6 @@ self.addEventListener('activate', function(event) {
       }));
     })
   );
-
 });
 
 self.addEventListener('fetch', function(event) {
@@ -63,7 +65,7 @@ self.addEventListener('fetch', function(event) {
       });
     })
     .catch(function(error) {
-      console.log('Error fectching data:', error);
+      console.log('Error fetching data:', error);
     })
   );
 });
