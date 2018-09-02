@@ -6,7 +6,7 @@
   }
 
   .inside #map-container {
-    height:200px;
+    height: 200px;
   }
 
   #restaurant-img {
@@ -16,7 +16,6 @@
   #title {
     font-size: 25px;
   }
-
 }
 
 @media screen and (min-width: 581px) {
