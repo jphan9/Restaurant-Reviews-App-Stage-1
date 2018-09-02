@@ -1,7 +1,7 @@
 // Set cache version number.
 var staticCacheName = 'restaurant-v1';
 
-// Opens the cache
+// Installs and adds the intial cache.
 self.addEventListener('install', function(event) {
   console.log("Installed");
   event.waitUntil(
@@ -36,7 +36,6 @@ self.addEventListener('install', function(event) {
 
 self.addEventListener('activate', function(event) {
   console.log("activated");
-
   event.waitUntil(
     caches.keys().then(function(cacheNames) {
       return Promise.all(cacheNames.map(function(thisStaticCacheName) {
@@ -49,6 +48,8 @@ self.addEventListener('activate', function(event) {
   );
 });
 
+
+// Fetchs and caches any new data.
 self.addEventListener('fetch', function(event) {
   console.log("fetching", event.request.url);
   event.respondWith(
