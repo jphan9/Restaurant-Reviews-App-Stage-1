@@ -91,7 +91,7 @@ section {
 /* ====================== Navigation ====================== */
 nav {
   width: 100%;
-  height: 80px;
+  height: 70px;
   background-color: #252831;
   text-align:center;
 }
@@ -111,27 +111,29 @@ nav h1 a {
 #breadcrumb {
     padding: 10px 40px 16px;
     list-style: none;
-    background-color: #eee;
+    background-color: #252831;
     font-size: 17px;
     margin: 0;
-    width: 100%;
+    //width: 100%;
+		text-align: center;
 }
 
 /* Display list items side by side */
 #breadcrumb li {
     display: inline;
+		color: #fff;
 }
 
 /* Add a slash symbol (/) before/behind each list item */
 #breadcrumb li+li:before {
     padding: 8px;
-    color: black;
+    color: #fff;
     content: "/\00a0";
 }
 
 /* Add a color to all links inside the list */
 #breadcrumb li a {
-    color: #0275d8;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -270,14 +272,18 @@ nav h1 a {
 }
 
 #restaurant-name {
-  color: #f18200;
+  color: #fff;
+	background-color: #252831;
   font-family: Arial,sans-serif;
   font-size: 20pt;
   font-weight: 200;
   letter-spacing: 0;
-  margin: 15px 0 30px;
+  margin: 139px 0 0px;
   text-transform: uppercase;
-  line-height: 1.1;
+  line-height: 50px;
+	text-align: center;
+	height: 50px;
+	width: 90%;
 }
 
 #restaurant-img {
@@ -290,8 +296,8 @@ nav h1 a {
 }
 
 #restaurant-cuisine {
-  background-color: #333;
-  color: #ddd;
+  background-color: #252831;
+  color: #fff;
   font-size: 12pt;
   font-weight: 300;
   letter-spacing: 10px;
